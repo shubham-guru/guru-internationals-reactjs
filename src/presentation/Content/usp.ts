@@ -1,0 +1,2 @@
+const Usp = "We not only deliver you the best product to your port but also helps and assist you to sell that product in your target market. We promise you to give hand holding support in establishing your business and making your brand."
+export default Usp;
