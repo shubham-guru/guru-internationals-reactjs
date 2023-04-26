@@ -11,11 +11,16 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import Bot from "../components/Bot";
 import { LinkedIn } from "@mui/icons-material";
 import OurServicesCard from "../components/OurServicesCard";
-import product_position from '../../assets/icons/product_position.png';
-import digital_presence from '../../assets/icons/digital_presence.png';
-import loyalty_program from '../../assets/icons/loyalty_program.png';
-import lowCost_marketing from '../../assets/icons/lowCost_marketing.png';
-import sustainable_business from '../../assets/icons/sustainable_business.png';
+import product_position from '../../assets/images/product_position.jpg';
+import digital_presence from '../../assets/images/digital_presence.jpg';
+import loyalty_program from '../../assets/images/loyalty_program.jpg';
+import lowCost_marketing from '../../assets/images/lowCost_marketing.jpg';
+import sustainable_business from '../../assets/images/sustainable_business.jpg';
+import bedsheet from '../../assets/images/bedsheet.jpg';
+import towel from '../../assets/images/towel.jpg';
+import rugs from '../../assets/images/rugs.jpg';
+import cotton from '../../assets/images/cotton.jpg';
+
 
 const Index = () => {
   return (
@@ -28,18 +33,20 @@ const Index = () => {
         <Heading title="Our USP" />
         <Content content={Usp} />
         <div>
-        <Typography
-          sx={{
-            color: "#777",
-            fontWeight: "bold",
-            fontFamily: "Libre Baskerville, serif",
-            marginTop: 8,
-            marginLeft: 3,
-            fontSize: 20,
-          }}
-        >
-          The services that our buyers will get from us
-        </Typography>
+          <Heading title="Our Products" />
+          <div style={{display: 'flex'}}>
+            <OurServicesCard url={cotton} title="Raw Cotton" />
+            <OurServicesCard url={bedsheet} title="Cotton Bedsheets" />
+          </div>
+
+          <div style={{display: 'flex'}}>
+            <OurServicesCard url={towel} title="Cotton Towels" />
+            <OurServicesCard url={rugs} title="Cotton Rugs" />
+          </div>
+        </div>
+      
+        <div>
+        <Heading title="Our Services" />
 
         <div style={{display: 'flex'}}>
           <OurServicesCard url={product_position} title="Product Positioning" />
